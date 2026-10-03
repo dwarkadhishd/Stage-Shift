@@ -8,49 +8,9 @@
     <!-- Note: Changed to the stable 5.3.3 Bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         crossorigin="anonymous">
-    <style>
-        .white-black {
-            filter: invert(1);
-            /* Better way to make SVGs white if they are black */
-        }
 
-        /* Custom styles for the Front Stage Image */
-        .front-stage-image {
-            width: 100%;
-            height: 55vh;
-            /* Limits height to 55% of the screen height */
-            min-height: 400px;
-            /* Ensures it doesn't get too small on phones */
-            object-fit: cover;
-            /* Prevents the image from stretching/distorting */
-            filter: brightness(0.4);
-            /* Darkens the image slightly so white text is readable */
-        }
+    <link href="./style.css" rel="stylesheet">
 
-        /* Perfectly center the text inside the carousel */
-        .caption-of-front-stage-image {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            bottom: auto;
-            /* Removes default Bootstrap bottom positioning */
-            text-align: center;
-            width: 100%;
-        }
-
-        /* Make the heading look cooler and minimalist */
-        .caption-of-front-stage-image h1 {
-            font-size: 3.5rem;
-            font-weight: 700;
-            letter-spacing: -1px;
-        }
-
-        .caption-of-front-stage-image p {
-            font-size: 1.25rem;
-            font-weight: 300;
-        }
-    </style>
 </head>
 
 <body>
@@ -110,20 +70,52 @@
         </div>
     </div>
 
-    <div class="b-example-divider"></div>
+    <div class="divider"></div>
 
     <!-- adding cards to feature events -->
 
-    <div class="card" style="width: 18rem;">
-        <img src="" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-                content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div class="card-container">
+        <div class="card" style="width: 18rem;">
+            <img src="./assets/techfest.jpg" class="card-img-top" alt="techfest">
+            <div class="card-body">
+                <h5 class="card-title">Tech-Fest</h5>
+                <p class="card-text">The Zonals allow top-performing students and technology enthusiasts from different regions
+                    to lock heads locally,
+                    competing for a slice of an INR 4,60,000 prize pool and a direct ticket to progress straight to the Grand
+                    Finale at IIT
+                    Bombay.</p>
+                <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="./assets/cultural-night.jpg" class="card-img-top" alt="cultural-night">
+            <div class="card-body">
+                <h5 class="card-title">Cultural Night</h5>
+                <p class="card-text">COEP's Cultural Nights are high-energy campus events packed with music, dance, drama, and student performances
+                celebrating the vibrant spirit of COEP Technological University.</p>
+                <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="./assets/job-fair.jpg" class="card-img-top" alt="job-fair">
+            <div class="card-body">
+                <h5 class="card-title">job-fair</h5>
+                <p class="card-text">The Zeal Job Fair 2026 was a massive campus recruitment event held on July 17, 2026, at the Zeal College of Engineering
+                and Research in Narhe, Pune. Organized in association with the Board of Apprenticeship Training (Western Region),
+                Mumbai, this mega event served as a major bridge between academia and industry, providing fresh graduates, diploma
+                holders, and job seekers a platform to interact directly with top recruiters</p>
+                <a href="#" class="btn btn-primary">View Details</a>
+            </div>
         </div>
     </div>
+    
 
+    <!--  -->
+
+
+    
     <!-- Bootstrap Script file -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
