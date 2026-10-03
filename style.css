@@ -49,6 +49,27 @@
     display: flex;
     flex-wrap: wrap;
 
-    justify-content: center;
+    justify-content: space-evenly;
+
     gap: 40px;
 }
+
+.container-volunteer {
+    color: aliceblue;
+
+}
+
+.inner-volunteer {
+    padding: 50px;
+}
+
+.volunteer-image {
+    padding: 20px;
+    height: 100px;
+}
+
+.volunteer-container {
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
