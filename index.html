@@ -55,18 +55,18 @@
 
 <body>
     <!-- Header and login button -->
+    <!-- Header and login button -->
     <header>
         <div class="px-3 py-2 text-bg-dark border-bottom">
             <div class="container">
-                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                    <h2 class="mb-0 me-4">Stage
-                        <img class="white-black" src="./assets/stopwatch.svg" alt="stopwatch" width="20px"
-                            height="20px" />
-                        <img class="white-black" src="./assets/mic-fill.svg" alt="mic-fill" width="20px"
-                            height="20px" /> & Shift
+                <!-- ADDED: justify-content-between pushes the logo left and nav right -->
+                <div class="d-flex flex-wrap align-items-center justify-content-between">
+                    <h2 class="mb-0"><img class="white-black" src="./assets/calendar-event.svg" alt="calendar-event" height="25px" /> 
+                        Stage & Shift
                     </h2>
-
-                    <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+    
+                    <!-- REMOVED: col-12 col-lg-auto my-2 to keep it clean on the right -->
+                    <ul class="nav text-small">
                         <li>
                             <a href="#" class="nav-link text-white"> Home </a>
                         </li>
@@ -80,7 +80,7 @@
                 </div>
             </div>
         </div>
-        <div class="px-3 py-2 border-bottom mb-0"> <!-- Removed mb-3 to make it flush with image -->
+        <div class="px-3 py-2 border-bottom mb-0">
             <div class="container d-flex flex-wrap justify-content-center">
                 <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto" role="search">
                     <input type="search" class="form-control rounded-pill" placeholder="Search..." aria-label="Search">
@@ -92,6 +92,7 @@
             </div>
         </div>
     </header>
+
 
     <!-- front image / Hero Section -->
     <div id="carouselExampleCaptions" class="carousel slide position-relative">
@@ -106,6 +107,20 @@
                     <p>Connecting performers with crews and opportunities.</p>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="b-example-divider"></div>
+
+    <!-- adding cards to feature events -->
+
+    <div class="card" style="width: 18rem;">
+        <img src="" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+                content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
     </div>
 

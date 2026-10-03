@@ -1,5 +1,14 @@
-.Stage-Img {
-    width: 80%;
-    height: 80%;
-    padding: 30px;
+.caption-of-front-stage-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+}
+
+.front-stage-image {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+
 }
