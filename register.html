@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - Stage & Shift</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <!-- Link to your shared stylesheet -->
+    <link href="./style.css" rel="stylesheet">
+    <style>
+        .card-registration {
+            border-radius: 15px;
+            border: none;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+        }
+
+        .registration-img {
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            object-fit: cover;
+            height: 100%;
+        }
+
+        @media (max-width: 1199px) {
+            .registration-img {
+                border-bottom-left-radius: 0;
+                border-top-right-radius: 15px;
+            }
+        }
+
+        .innercard{
+         display: flex;
+         justify-content: center;
+        }
+    </style>
+</head>
+
+<body class="bg-dark">
+
+    <!-- Header to navigate back home -->
+    <header class="px-3 py-3 text-bg-dark border-bottom">
+        <div class="container d-flex justify-content-center">
+            <a href="index.html" class="text-decoration-none text-white">
+                <h3 class="mb-0">
+                    <img class="white-black me-2" style="filter: invert(1);" src="./assets/calendar-event.svg"
+                        alt="calendar-event" height="25px" />
+                    Stage & Shift
+                </h3>
+            </a>
+        </div>
+    </header>
+
+    <section class="h-100">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col">
+                    <div class="card card-registration my-4">
+                        <div class="row g-0 innercard">
+                            <div class="col-xl-6">
+                                <div class="card-body p-md-5 text-black">
+                                    <h3 class="mb-5 text-uppercase">Registration Form</h3>
+
+                                    <!-- Event Selection -->
+                                    <div class="form-floating mb-4">
+                                        <select class="form-select" id="eventSelect" aria-label="Select Event">
+                                            <option selected disabled>Select Event...</option>
+                                            <option value="techfest">Tech Fest 2026</option>
+                                            <option value="cultural">Cultural Night 2026</option>
+                                            <option value="jobfair">Job Fair 2026</option>
+                                        </select>
+                                        <label for="eventSelect">Upcoming Events</label>
+                                    </div>
+
+                                    <!-- Name Fields -->
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-floating">
+                                                <input type="text" id="firstName" class="form-control"
+                                                    placeholder="First Name" />
+                                                <label for="firstName">First name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-floating">
+                                                <input type="text" id="lastName" class="form-control"
+                                                    placeholder="Last Name" />
+                                                <label for="lastName">Last name</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Phone Number -->
+                                    <div class="form-floating mb-4">
+                                        <input type="text" id="phoneNumber" class="form-control"
+                                            placeholder="Phone Number" />
+                                        <label for="phoneNumber">Phone Number</label>
+                                    </div>
+
+                                    <!-- Academic Details -->
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-floating">
+                                                <select class="form-select" id="branchSelect">
+                                                    <option selected disabled>Select Branch...</option>
+                                                    <option value="CE">Computer Engineering</option>
+                                                    <option value="IT">Information Technology</option>
+                                                    <option value="CV">Civil Engineering</option>
+                                                </select>
+                                                <label for="branchSelect">Branch</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-floating">
+                                                <select class="form-select" id="yearSelect">
+                                                    <option selected disabled>Select Year...</option>
+                                                    <option value="1">First Year</option>
+                                                    <option value="2">Second Year</option>
+                                                    <option value="3">Third Year</option>
+                                                    <option value="4">Fourth Year</option>
+                                                </select>
+                                                <label for="yearSelect">Year of study</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Role Preference -->
+                                    <div class="mb-4 py-2">
+                                        <h6 class="mb-3">Preferred Role (Select One)</h6>
+
+                                        <div class="form-check form-check-inline mb-2">
+                                            <input class="form-check-input" type="radio" name="roleOptions"
+                                                id="roleStage" value="stage" />
+                                            <label class="form-check-label" for="roleStage">Stage Manager</label>
+                                        </div>
+                                        <div class="form-check form-check-inline mb-2">
+                                            <input class="form-check-input" type="radio" name="roleOptions"
+                                                id="roleTech" value="tech" />
+                                            <label class="form-check-label" for="roleTech">Tech & AV Support</label>
+                                        </div>
+                                        <div class="form-check form-check-inline mb-2">
+                                            <input class="form-check-input" type="radio" name="roleOptions"
+                                                id="roleCrowd" value="crowd" />
+                                            <label class="form-check-label" for="roleCrowd">Crowd Control</label>
+                                        </div>
+                                        <div class="form-check form-check-inline mb-2">
+                                            <input class="form-check-input" type="radio" name="roleOptions"
+                                                id="roleHost" value="host" />
+                                            <label class="form-check-label" for="roleHost">Event Host/Speaker</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Action Buttons -->
+                                    <div class="d-flex justify-content-end pt-3 border-top">
+                                        <button type="reset" class="btn btn-light btn-lg">Reset all</button>
+                                        <button type="submit" class="btn btn-warning btn-lg ms-2">Submit form</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
